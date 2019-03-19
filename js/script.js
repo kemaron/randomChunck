@@ -7,6 +7,7 @@ button.addEventListener('click', function(){
 
 var paragraph = document.getElementById('joke');
 
+// pobieram zart ze strony wskazanej w 'url', odpowiedź parsuje przy pomocy JSON
 function getJoke() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
@@ -17,4 +18,5 @@ function getJoke() {
     xhr.send();
   }
 
+//wywołanie po pierwszym wczytaniu
 getJoke();
